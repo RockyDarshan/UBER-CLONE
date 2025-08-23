@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import  { useEffect, useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import axios from 'axios';
@@ -42,7 +42,7 @@ const Home = () => {
 
     useEffect(() => {
         socket.emit("join", { userType: "user", userId: user._id })
-    }, [ user ])
+    }, [ user , socket])
 
     socket.on('ride-confirmed', ride => {
 
@@ -184,7 +184,7 @@ const Home = () => {
     }
 
     async function createRide() {
-        const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/rides/create`, {
+         await axios.post(`${import.meta.env.VITE_BASE_URL}/rides/create`, {
             pickup,
             destination,
             vehicleType
