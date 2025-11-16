@@ -33,6 +33,7 @@ const ConfirmRide = (props) => {
                         <i className="text-lg ri-map-pin-2-fill"></i>
                         <div>
                             <h3 className="text-lg font-medium">562/11-A</h3>
+                            
                             <p className="text-sm -mt-1 text-gray-600">
                                 {props.destination}
                             </p>

@@ -40,12 +40,14 @@ const UserLogin = () => {
 
   return (
     <div className="p-7 h-screen flex flex-col justify-between">
-      <div>
-        <img
+              <p className='w-16 ml-8 text-[30px] text-black font-bold mt-1'>GoDial</p>
+
+      <div >
+        {/* <img
           className="w-16 mb-10"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQy-OIkA6In0fTvVwZADPmFFibjmszu2A0g&s"
           alt="logo"
-        />
+        /> */}
 
         <form onSubmit={submitHandler}>
           <h3 className="text-lg font-medium mb-2">What&apos;s your email</h3>
